@@ -1,0 +1,21 @@
+app:
+  jwt:
+    jwtSecret: vh3bvoiuph2yvc2u3ogcjbwchbyc3y87cy4gbvdu32v2yv2ugv
+    #jwtExpirationMs: 3600000
+    jwtExpirationMs: 3000
+
+web:
+  cors:
+    allowedOrigins: '*'
+    allowedMethods: GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD
+    allowedHeaders: '*'
+    exposedHeaders: '*'
+    maxAge: 3600
+    
+server:
+  servlet:
+    context-path: /spring-jwt/api
+
+spring:
+  jpa:
+    show-sql: true
