@@ -1,22 +1,9 @@
 package demo.spring.springJwt.security;
 
-import demo.spring.springJwt.config.WebConfigProperties;
-import demo.spring.springJwt.model.Roles;
-import demo.spring.springJwt.security.filter.AuthTokenFilter;
-import demo.spring.springJwt.util.AuthEntryPointJwt;
-import lombok.RequiredArgsConstructor;
-
-import java.util.List;
-import java.util.stream.Stream;
-
-import javax.servlet.Filter;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
@@ -25,15 +12,16 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import org.springframework.util.StringUtils;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.filter.CorsFilter;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import demo.spring.springJwt.config.WebConfigProperties;
+import demo.spring.springJwt.model.Roles;
+import demo.spring.springJwt.security.filter.AuthTokenFilter;
+import demo.spring.springJwt.util.AuthEntryPointJwt;
+
 @Configuration
 @EnableWebSecurity
-
 @EnableConfigurationProperties(WebConfigProperties.class)
 public class SecurityConfig {
 	

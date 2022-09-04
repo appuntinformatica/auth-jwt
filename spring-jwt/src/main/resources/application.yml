@@ -1,8 +1,7 @@
 app:
   jwt:
     jwtSecret: vh3bvoiuph2yvc2u3ogcjbwchbyc3y87cy4gbvdu32v2yv2ugv
-    #jwtExpirationMs: 3600000
-    jwtExpirationMs: 3000
+    jwtExpirationMs: 3600000
 
 web:
   cors:

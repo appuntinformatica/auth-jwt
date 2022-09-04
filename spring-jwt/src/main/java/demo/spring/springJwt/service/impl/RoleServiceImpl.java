@@ -20,5 +20,4 @@ public class RoleServiceImpl implements RoleService {
         return roleJpaRepository.save(roleEntity);
     }
 
-
 }
