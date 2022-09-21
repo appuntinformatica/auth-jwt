@@ -3,7 +3,6 @@
 - [Spring Boot 2.7.3](https://start.spring.io/)
 - java version "17.0.4" 2022-07-19 LTS
 
-
 ### Create Project Angular 14
 ```
 ng new ng-spring-jwt --routing --skip-tests true --style css
